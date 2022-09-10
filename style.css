@@ -1,5 +1,5 @@
 * {
-  border: 0;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -7,4 +7,27 @@
 aside img {
   height: 10%;
   width: 10%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 1rem 1.5rem;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

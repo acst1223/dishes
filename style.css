@@ -21,6 +21,8 @@ nav ul {
 
 nav ul li {
   padding: 1rem 1.5rem;
+  font-family: Raleway;
+  font-weight: 200;
 }
 
 nav ul li:hover {

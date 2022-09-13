@@ -30,12 +30,17 @@ nav ul li:hover {
   cursor: pointer;
 }
 
-.middlebox {
+nav ul li div.middlebox {
   position: absolute;
   width: 100%;
   height: 40%;
   top: 30%;
-  border: 2px solid;
+  left: 0;
+  border-right: 0.5px solid;
+}
+
+nav ul li div.middlebox:nth-last-child(1) {
+  border-right: none;
 }
 
 a {

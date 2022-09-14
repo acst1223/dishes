@@ -6,6 +6,7 @@
 
 body {
   overflow: hidden;
+  height: 90vh;
 }
 
 aside img {
@@ -56,11 +57,11 @@ a {
 div.main_box {
   display: flex;
   position: relative;
+  height: 100%;
 }
 
 aside {
   flex: 1;
-  position: sticky;
   top: 0;
 }
 
@@ -71,5 +72,5 @@ aside img {
 
 main {
   flex: 1;
-  overflow: visible;
+  overflow-y: scroll;
 }

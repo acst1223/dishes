@@ -9,18 +9,10 @@ body {
   height: 90vh;
 }
 
-aside img {
-  height: 10%;
-  width: 10%;
-}
-
-nav {
-  top: 0;
-}
-
 nav ul {
   list-style: none;
   display: flex;
+  height: 10vh;
 }
 
 nav ul li {
@@ -29,6 +21,8 @@ nav ul li {
   font-weight: 200;
   position: relative;
   transition: 0.75s ease;
+  display: flex;
+  align-items: center;
 }
 
 nav ul li:hover {

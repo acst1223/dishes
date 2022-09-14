@@ -66,11 +66,9 @@ div.main_box {
 aside {
   flex: 1;
   top: 0;
-}
-
-aside img {
-  object-fit: cover;
-  width: 100%;
+  background-image: url("pics/dishes/spinach.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 main {

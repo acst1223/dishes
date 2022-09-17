@@ -105,6 +105,7 @@ div.main_box {
           img.person {
             height: 100%;
             width: 100%;
+            min-width: 100px;
             object-fit: contain;
           }
         }
@@ -152,5 +153,27 @@ div.main_box {
       visibility: hidden;
       flex: 0;
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 20%;
+
+    nav {
+      ul {
+        flex-direction: column;
+
+        li {
+          div.middlebox {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  div.main_box {
+    height: 80%;
   }
 }

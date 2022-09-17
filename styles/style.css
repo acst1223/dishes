@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+header {
+  height: 10%;
+}
+header nav {
+  height: 100%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+header nav ul li {
+  font-family: Raleway;
+  font-weight: 200;
+  position: relative;
+  transition: 0.75s ease;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header nav ul li:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+header nav ul li div.middlebox {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 30%;
+  left: 0;
+  border-right: 0.5px solid #878787;
+  z-index: 0;
+}
+header nav ul li div.middlebox_last {
+  border-right: 0;
+}
+header nav ul a {
+  text-decoration: none;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+div.main_box {
+  display: flex;
+  position: relative;
+  height: 90%;
+}
+div.main_box aside {
+  flex: 1;
+  top: 0;
+  background-image: url("../pics/dishes/spinach.jpg");
+  background-position: center;
+  background-size: cover;
+}
+div.main_box main {
+  flex: 1;
+  overflow-y: scroll;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0.5rem 2rem;
+}
+div.main_box main.main_about {
+  overflow-y: hidden;
+}
+div.main_box main.main_about div.about {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-10%);
+}
+div.main_box main.main_about div.about div.person_info {
+  height: 30%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.main_box main.main_about div.about div.person_info img.person {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+div.main_box main h1,
+div.main_box main h2,
+div.main_box main h3,
+div.main_box main h4,
+div.main_box main h5,
+div.main_box main h6 {
+  font-weight: 200;
+}
+div.main_box main h1 {
+  border-bottom: 0.5px solid black;
+  margin-bottom: 1rem;
+}
+div.main_box main h2 {
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+div.main_box main p {
+  color: #878787;
+  margin: 0.3rem 0.5rem;
+}
+div.main_box main ul {
+  margin: 0.3rem 1.5rem;
+  color: #878787;
+}
+div.main_box main ol {
+  margin: 0.3rem 1.7rem;
+  color: #878787;
+}
+
+@media screen and (max-width: 600px) {
+  div.main_box aside {
+    visibility: hidden;
+    flex: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -135,7 +135,7 @@ div.main_box main ol {
 }
 @media screen and (max-width: 400px) {
   header {
-    height: 20%;
+    height: 30%;
   }
   header nav ul {
     flex-direction: column;

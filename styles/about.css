@@ -6,17 +6,17 @@ div.main_box main.main_about div.about {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-10%);
+  transform: translateY(-5%);
 }
 div.main_box main.main_about div.about div.person_info {
-  height: 30%;
-  width: 30%;
+  height: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 div.main_box main.main_about div.about div.person_info img.person {
-  height: 100%;
+  height: 80%;
   width: 100%;
   min-width: 100px;
   -o-object-fit: contain;

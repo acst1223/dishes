@@ -1,0 +1,28 @@
+div.main_box {
+  main.main_about {
+    overflow-y: hidden;
+
+    div.about {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(-10%);
+
+      div.person_info {
+        height: 30%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img.person {
+          height: 100%;
+          width: 100%;
+          min-width: 100px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

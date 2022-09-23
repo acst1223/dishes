@@ -15,6 +15,9 @@ main div.todo_item div.date {
   display: flex;
   justify-content: right;
 }
+main div.todo_item p a {
+  color: #878787;
+}
 main div.todo_item div.done_cover {
   position: absolute;
   z-index: 1;

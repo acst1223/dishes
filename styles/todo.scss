@@ -18,6 +18,12 @@ main {
       justify-content: right;
     }
 
+    p {
+      a {
+        color: #878787;
+      }
+    }
+
     div.done_cover {
       position: absolute;
       z-index: 1;

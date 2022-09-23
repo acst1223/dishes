@@ -1,24 +1,28 @@
-div.main_box main.main_about {
-  overflow-y: hidden;
-}
-div.main_box main.main_about div.about {
-  height: 100%;
+main.main_about div.about {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-5%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
 }
-div.main_box main.main_about div.about div.person_info {
-  height: 50%;
-  width: 50%;
+main.main_about div.about div.person_info {
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-div.main_box main.main_about div.about div.person_info img.person {
-  height: 80%;
+main.main_about div.about div.person_info img.person {
   width: 100%;
   min-width: 100px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  main.main_about div.about div.person_info {
+    width: 45%;
+  }
 }/*# sourceMappingURL=about.css.map */

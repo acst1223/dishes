@@ -8,7 +8,7 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 2;
+  z-index: 3;
 
   nav {
     ul {
@@ -41,6 +41,32 @@ header {
         div.middlebox_last {
           border-right: 0;
         }
+
+        ul.dropdown {
+          display: flex;
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.3s ease;
+
+          li {
+            a {
+              background-color: white;
+              border: 0.5px solid rgb(171, 171, 171);
+              transition: all 0.3s ease;
+
+              &:hover {
+                background-color: rgb(247, 247, 247);
+              }
+            }
+          }
+        }
+
+        &:hover > ul.dropdown,
+        &:focus-within > ul.dropdown,
+        ul.dropdown:hover {
+          visibility: visible;
+          opacity: 1;
+        }
       }
 
       a {
@@ -52,6 +78,7 @@ header {
         justify-content: center;
         z-index: 10;
         width: 100%;
+        min-width: 120px;
       }
     }
   }
@@ -113,6 +140,22 @@ main {
   }
 }
 
+@media screen and (min-width: 601px) {
+  header {
+    nav {
+      ul {
+        li {
+          ul.dropdown {
+            position: absolute;
+            top: 100%;
+            z-index: 15;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   aside {
     display: none;
@@ -121,6 +164,18 @@ main {
   main.right_half {
     width: 100vw;
     transform: none;
+  }
+
+  header {
+    nav {
+      ul {
+        li {
+          ul.dropdown {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 

@@ -40,10 +40,10 @@ header nav ul li div.middlebox_last {
   border-right: 0;
 }
 header nav ul li ul.dropdown {
-  display: flex;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: none;
+  pointer-events: none;
 }
 header nav ul li ul.dropdown li a {
   background-color: white;
@@ -57,6 +57,7 @@ header nav ul li:hover > ul.dropdown, header nav ul li:focus-within > ul.dropdow
 header nav ul li ul.dropdown:hover {
   visibility: visible;
   opacity: 1;
+  pointer-events: all;
 }
 header nav ul a {
   text-decoration: none;
@@ -118,7 +119,7 @@ main.right_half {
   transform: translateX(100%);
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 401px) {
   header nav ul li ul.dropdown {
     position: absolute;
     top: 100%;
@@ -133,9 +134,6 @@ main.right_half {
     width: 100vw;
     transform: none;
   }
-  header nav ul li ul.dropdown {
-    display: none;
-  }
 }
 @media screen and (max-width: 400px) {
   header {
@@ -144,7 +142,27 @@ main.right_half {
   header nav ul {
     flex-direction: column;
   }
+  header nav ul li {
+    flex-direction: column;
+  }
   header nav ul li div.middlebox {
     border-right: 0;
+  }
+  header nav ul li ul.dropdown {
+    display: none;
+    width: 100%;
+    border: 0.5px solid #eeeeee;
+    pointer-events: all;
+  }
+  header nav ul li ul.dropdown li {
+    width: 100%;
+  }
+  header nav ul li ul.dropdown li a {
+    border: none;
+    width: 100%;
+  }
+  header nav ul li:hover > ul.dropdown, header nav ul li:focus-within > ul.dropdown,
+header nav ul li ul.dropdown:hover {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */

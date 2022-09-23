@@ -43,10 +43,10 @@ header {
         }
 
         ul.dropdown {
-          display: flex;
           visibility: hidden;
           opacity: 0;
-          transition: all 0.3s ease;
+          transition: none;
+          pointer-events: none;
 
           li {
             a {
@@ -66,6 +66,7 @@ header {
         ul.dropdown:hover {
           visibility: visible;
           opacity: 1;
+          pointer-events: all;
         }
       }
 
@@ -140,7 +141,7 @@ main {
   }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 401px) {
   header {
     nav {
       ul {
@@ -165,18 +166,6 @@ main {
     width: 100vw;
     transform: none;
   }
-
-  header {
-    nav {
-      ul {
-        li {
-          ul.dropdown {
-            display: none;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -188,8 +177,30 @@ main {
         flex-direction: column;
 
         li {
+          flex-direction: column;
+
           div.middlebox {
             border-right: 0;
+          }
+
+          ul.dropdown {
+            display: none;
+            width: 100%;
+            border: 0.5px solid #eeeeee;
+            pointer-events: all;
+            li {
+              width: 100%;
+              a {
+                border: none;
+                width: 100%;
+              }
+            }
+          }
+
+          &:hover > ul.dropdown,
+          &:focus-within > ul.dropdown,
+          ul.dropdown:hover {
+            display: flex;
           }
         }
       }

@@ -47,6 +47,8 @@ header {
           opacity: 0;
           transition: none;
           pointer-events: none;
+          display: flex;
+          flex-direction: column;
 
           li {
             a {
@@ -56,6 +58,12 @@ header {
 
               &:hover {
                 background-color: rgb(247, 247, 247);
+              }
+            }
+
+            &:nth-child(n + 2) {
+              a {
+                border-top: none;
               }
             }
           }

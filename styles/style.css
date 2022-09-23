@@ -44,6 +44,8 @@ header nav ul li ul.dropdown {
   opacity: 0;
   transition: none;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
 }
 header nav ul li ul.dropdown li a {
   background-color: white;
@@ -52,6 +54,9 @@ header nav ul li ul.dropdown li a {
 }
 header nav ul li ul.dropdown li a:hover {
   background-color: rgb(247, 247, 247);
+}
+header nav ul li ul.dropdown li:nth-child(n+2) a {
+  border-top: none;
 }
 header nav ul li:hover > ul.dropdown, header nav ul li:focus-within > ul.dropdown,
 header nav ul li ul.dropdown:hover {

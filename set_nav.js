@@ -8,7 +8,7 @@ setTimeout(() => {
 }, 0);
 
 navLis.forEach((navLi) => {
-  navLi.addEventListener("mouseover", (e) => {
-    navLi.classList.add("hovered");
+  navLi.addEventListener("click", (e) => {
+    navLi.classList.toggle("clicked");
   });
 });

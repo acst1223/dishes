@@ -161,8 +161,10 @@ main.right_half {
     border: none;
     width: 100%;
   }
-  header nav ul li:hover > ul.dropdown, header nav ul li:focus-within > ul.dropdown,
+  header nav ul li:hover > ul.dropdown, header nav ul li:focus-within > ul.dropdown, header nav ul li.hovered > ul.dropdown,
 header nav ul li ul.dropdown:hover {
     display: flex;
+    visibility: visible;
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

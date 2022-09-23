@@ -199,8 +199,11 @@ main {
 
           &:hover > ul.dropdown,
           &:focus-within > ul.dropdown,
+          &.hovered > ul.dropdown,
           ul.dropdown:hover {
             display: flex;
+            visibility: visible;
+            opacity: 1;
           }
         }
       }
